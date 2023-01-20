@@ -1,0 +1,116 @@
+@font-face {
+  font-family: teko;
+  src: url(Teko-Regular.ttf);
+}
+@font-face {
+  font-family: teko-bold;
+  src: url(Teko-Bold.ttf);
+}
+@font-face {
+  font-family: teko-light;
+  src: url(Teko-Light.ttf);
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: teko-light;
+  height: 740px;
+}
+
+header {
+  background: linear-gradient(to bottom, #0085CA, 90%, black);
+  color: white;
+  font-family: Teko;
+  font-size: 24pt;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: x-large;
+}
+
+.standings {
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 20pt;
+  text-align: left;
+}
+
+.standings > h3 {
+  font-size: 24pt;
+  margin-bottom: 0;
+  color:  #0085CA;
+  text-align: center;
+}
+
+.record {
+  display: inline;
+  color: grey;
+  font-size: 14pt;
+  font-family: teko-light;
+  text-align: left;
+
+}
+
+img {
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  padding-bottom: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  border: 1px solid white;
+}
+
+.matchup {
+  display: block;
+  list-style: none;
+  font-size: 16pt;
+  background-color: rgb(40, 40, 40);
+  border-radius: 5px;
+  border-color: 5px solid aliceblue;
+  padding: 15px;
+}
+
+h6 {
+  padding: 10px;
+  margin: 0;
+  font-size: 18pt;
+}
+
+button {
+  background-color: rgb(40, 40, 40);
+  border: 0;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 0;
+  text-align: left;
+  color: white;
+  font-family: teko-light;
+  width: 100%;
+  font-size: 16pt;
+}
+
+@media (min-width: 800px){
+  .tournament-games-container { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+@media (max-width: 799px){
+  .tournament-games-container { 
+    display: flex;
+    flex-direction: column;
+  }
+}
+.Round {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
